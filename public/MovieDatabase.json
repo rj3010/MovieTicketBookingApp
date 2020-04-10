@@ -75,17 +75,30 @@
     {
       "movieId": 4,
       "price": 200,
-      "id": 1
+      "bookingId": 1
     },
     {
       "movieId": 2,
       "price": 300,
-      "id": 2
+      "bookingId": 2
     }
   ],
-  "locations": ["patna", "mumbai", "kolkata", "delhi", "chennai"],
-  "genre": ["Action", "Animation", "Sci-Fi"],
-  "language": ["hindi", "english"],
+  "locations": [
+    { "locationId": 1, "location": "patna" },
+    { "locationId": 2, "location": "mumbai" },
+    { "locationId": 3, "location": "kolkata" },
+    { "locationId": 4, "location": "delhi" },
+    { "locationId": 5, "location": "chennai" }
+  ],
+  "genres": [
+    { "genreId": 1, "genre": "Action" },
+    { "genreId": 2, "genre": "Animation" },
+    { "genreId": 3, "genre": "Sci-Fi" }
+  ],
+  "languages": [
+    { "languageId": 1, "language": "English" },
+    { "languageId": 2, "language": "Hindi" }
+  ],
   "theaters": [
     {
       "theaterName": "reagent",

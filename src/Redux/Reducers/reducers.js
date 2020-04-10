@@ -1,6 +1,11 @@
 /** @format */
 
-import { GET_DATA } from "../ActionTypes/actionTypes";
+import {
+  GET_DATA,
+  FILTER_MOVIE_BY_GENRE,
+  FILTER_MOVIE_BY_LANGUAGE,
+  FILTER_MOVIE_BY_THEATER,
+} from "../ActionTypes/actionTypes";
 const initialState = {
   isLoaded: false,
 };
@@ -11,7 +16,19 @@ const MovieReducer = (state = initialState, action) => {
       return {
         ...state,
         ...action.payload,
-        isLoaded: true
+        isLoaded: true,
+      };
+    case FILTER_MOVIE_BY_GENRE:
+      return {
+        ...state,
+      };
+    case FILTER_MOVIE_BY_LANGUAGE:
+      return {
+        ...state,
+      };
+    case FILTER_MOVIE_BY_THEATER:
+      return {
+        ...state,
       };
     default: {
       return state;

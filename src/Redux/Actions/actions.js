@@ -1,7 +1,12 @@
 /** @format */
 
 import axios from "axios";
-import { GET_DATA } from "../ActionTypes/actionTypes";
+import {
+  GET_DATA,
+  FILTER_MOVIE_BY_GENRE,
+  FILTER_MOVIE_BY_LANGUAGE,
+  FILTER_MOVIE_BY_THEATER,
+} from "../ActionTypes/actionTypes";
 
 export const fillDataInRedux = (payload) => ({
   type: GET_DATA,
@@ -21,3 +26,13 @@ export const getData = () => {
       });
   };
 };
+
+export const filterMovieByGenre = () => ({
+  type: FILTER_MOVIE_BY_GENRE,
+});
+export const filterMovieByLanguage = () => ({
+  type: FILTER_MOVIE_BY_LANGUAGE,
+});
+export const filterMovieByTheater = () => ({
+  type: FILTER_MOVIE_BY_THEATER,
+});
