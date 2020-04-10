@@ -83,6 +83,9 @@
       "id": 2
     }
   ],
+  "locations": ["patna", "mumbai", "kolkata", "delhi", "chennai"],
+  "genre": ["Action", "Animation", "Sci-Fi"],
+  "language": ["hindi", "english"],
   "theaters": [
     {
       "theaterName": "reagent",
