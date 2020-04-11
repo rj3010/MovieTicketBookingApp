@@ -6,6 +6,8 @@ import {
   FILTER_MOVIE_BY_LANGUAGE,
   FILTER_MOVIE_BY_THEATER,
   FILTER_MOVIE_BY_LOCATION,
+  CALCULATE_PRICE,
+  UPDATE_SEAT_STATUS,
 } from "../ActionTypes/actionTypes";
 
 const initialState = {
@@ -15,6 +17,7 @@ const initialState = {
   tempTheaters: [],
   tempGenres: [],
   tempLanguages: [],
+  totalTicketMoney: 0,
 };
 
 const MovieReducer = (state = initialState, action) => {
@@ -26,6 +29,27 @@ const MovieReducer = (state = initialState, action) => {
         ...state,
         ...action.payload,
         isLoaded: true,
+      };
+
+    case UPDATE_SEAT_STATUS: {
+      console.log(action.payload1, action.payload2);
+      let temp = state.theaters.map((ele) => {
+        if (ele.theaterName == action.payload2) {
+          ele.seats = action.payload1;
+          return ele;
+        } else {
+          return ele;
+        }
+      });
+      console.log(temp);
+      return {
+        ...state,
+      };
+    }
+    case CALCULATE_PRICE:
+      return {
+        ...state,
+        totalTicketMoney: action.payload,
       };
     // -----------------------------------------------------------------------
 

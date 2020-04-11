@@ -7,6 +7,8 @@ import {
   FILTER_MOVIE_BY_LANGUAGE,
   FILTER_MOVIE_BY_THEATER,
   FILTER_MOVIE_BY_LOCATION,
+  CALCULATE_PRICE,
+  UPDATE_SEAT_STATUS,
 } from "../ActionTypes/actionTypes";
 
 export const fillDataInRedux = (payload) => ({
@@ -46,4 +48,15 @@ export const filterMovieByTheater = (payload) => ({
 export const filterMovieByLocation = (payload) => ({
   type: FILTER_MOVIE_BY_LOCATION,
   payload,
+});
+
+export const calculatePrice = (payload) => ({
+  type: CALCULATE_PRICE,
+  payload,
+});
+
+export const updateSeatStatus = (payload1, payload2) => ({
+  type: UPDATE_SEAT_STATUS,
+  payload1,
+  payload2,
 });
