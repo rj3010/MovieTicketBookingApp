@@ -8,7 +8,8 @@
       "language": "english",
       "actors": "Chris Hemsworth",
       "price": 399,
-      "theaterName": "galaxy"
+      "theaterName": "galaxy",
+      "location": "mumbai"
     },
     {
       "id": 2,
@@ -18,7 +19,8 @@
       "language": "english",
       "image": "2.jpg",
       "price": 300,
-      "theaterName": "fun cinemas"
+      "theaterName": "fun cinemas",
+      "location": "chennai"
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "language": "hindi",
       "image": "3.jpg",
       "price": 250,
-      "theaterName": "maratha mandir"
+      "theaterName": "maratha mandir",
+      "location": "mumbai"
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "language": "hindi",
       "image": "4.jpg",
       "price": 350,
-      "theaterName": "reagent"
+      "theaterName": "reagent",
+      "location": "patna"
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "language": "english",
       "image": "5.jpg",
       "price": 450,
-      "theaterName": "mona"
+      "theaterName": "mona",
+      "location": "patna"
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "language": "hindi",
       "image": "6.jpg",
       "price": 400,
-      "theaterName": "max"
+      "theaterName": "max",
+      "location": "kolkata"
     },
     {
       "id": 7,
@@ -68,7 +74,8 @@
       "image": "7.jpg",
       "language": "english",
       "price": 200,
-      "theaterName": "rex"
+      "theaterName": "rex",
+      "location": "delhi"
     }
   ],
   "bookings": [
@@ -96,8 +103,8 @@
     { "genreId": 3, "genre": "Sci-Fi" }
   ],
   "languages": [
-    { "languageId": 1, "language": "English" },
-    { "languageId": 2, "language": "Hindi" }
+    { "languageId": 1, "language": "english" },
+    { "languageId": 2, "language": "hindi" }
   ],
   "theaters": [
     {
@@ -106,26 +113,26 @@
       "location": "patna",
       "totalSeats": 20,
       "seats": [
-        { "seatNo": 1, "isAvailable": true },
-        { "seatNo": 2, "isAvailable": true },
-        { "seatNo": 3, "isAvailable": true },
-        { "seatNo": 4, "isAvailable": true },
-        { "seatNo": 5, "isAvailable": true },
-        { "seatNo": 6, "isAvailable": true },
-        { "seatNo": 7, "isAvailable": true },
-        { "seatNo": 8, "isAvailable": true },
-        { "seatNo": 9, "isAvailable": true },
-        { "seatNo": 10, "isAvailable": true },
-        { "seatNo": 11, "isAvailable": true },
-        { "seatNo": 12, "isAvailable": true },
-        { "seatNo": 13, "isAvailable": true },
-        { "seatNo": 14, "isAvailable": true },
-        { "seatNo": 15, "isAvailable": true },
-        { "seatNo": 16, "isAvailable": true },
-        { "seatNo": 17, "isAvailable": true },
-        { "seatNo": 18, "isAvailable": true },
-        { "seatNo": 19, "isAvailable": true },
-        { "seatNo": 20, "isAvailable": true }
+        { "seatNo": 1, "isAvailable": true, "isChecked": false },
+        { "seatNo": 2, "isAvailable": true, "isChecked": false },
+        { "seatNo": 3, "isAvailable": true, "isChecked": false },
+        { "seatNo": 4, "isAvailable": true, "isChecked": false },
+        { "seatNo": 5, "isAvailable": true, "isChecked": false },
+        { "seatNo": 6, "isAvailable": true, "isChecked": false },
+        { "seatNo": 7, "isAvailable": true, "isChecked": false },
+        { "seatNo": 8, "isAvailable": true, "isChecked": false },
+        { "seatNo": 9, "isAvailable": true, "isChecked": false },
+        { "seatNo": 10, "isAvailable": true, "isChecked": false },
+        { "seatNo": 11, "isAvailable": true, "isChecked": false },
+        { "seatNo": 12, "isAvailable": true, "isChecked": false },
+        { "seatNo": 13, "isAvailable": true, "isChecked": false },
+        { "seatNo": 14, "isAvailable": true, "isChecked": false },
+        { "seatNo": 15, "isAvailable": true, "isChecked": false },
+        { "seatNo": 16, "isAvailable": true, "isChecked": false },
+        { "seatNo": 17, "isAvailable": true, "isChecked": false },
+        { "seatNo": 18, "isAvailable": true, "isChecked": false },
+        { "seatNo": 19, "isAvailable": true, "isChecked": false },
+        { "seatNo": 20, "isAvailable": true, "isChecked": false }
       ]
     },
     {
@@ -157,9 +164,9 @@
       ]
     },
     {
-      "theaterName": "chennai",
+      "theaterName": "fun cinemas",
       "theaterId": 3,
-      "location": "fun cinemas",
+      "location": "chennai",
       "totalSeats": 20,
       "seats": [
         { "seatNo": 1, "isAvailable": true },

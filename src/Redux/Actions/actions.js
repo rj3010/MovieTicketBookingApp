@@ -6,6 +6,7 @@ import {
   FILTER_MOVIE_BY_GENRE,
   FILTER_MOVIE_BY_LANGUAGE,
   FILTER_MOVIE_BY_THEATER,
+  FILTER_MOVIE_BY_LOCATION,
 } from "../ActionTypes/actionTypes";
 
 export const fillDataInRedux = (payload) => ({
@@ -27,12 +28,22 @@ export const getData = () => {
   };
 };
 
-export const filterMovieByGenre = () => ({
+export const filterMovieByGenre = (payload) => ({
   type: FILTER_MOVIE_BY_GENRE,
+  payload,
 });
-export const filterMovieByLanguage = () => ({
+
+export const filterMovieByLanguage = (payload) => ({
   type: FILTER_MOVIE_BY_LANGUAGE,
+  payload,
 });
-export const filterMovieByTheater = () => ({
+
+export const filterMovieByTheater = (payload) => ({
   type: FILTER_MOVIE_BY_THEATER,
+  payload,
+});
+
+export const filterMovieByLocation = (payload) => ({
+  type: FILTER_MOVIE_BY_LOCATION,
+  payload,
 });
